@@ -33,11 +33,39 @@ if 'current' not in st.session_state:
 
 # ========== ステップ3: クイズ表示 ==========
 # TODO: クイズを表示する処理を書く
-
+if st.session_state.current < len(quizzes):
+    current_quiz = quizzes[st.session_state.current]
+    
+    st.write(f"### 問題{st.session_state.current + 1}: {current_quiz['question']}")
+    
+    answer = st.radio(
+        "答えを選んでください：",
+        current_quiz['options'],
+        key=f"q{st.session_state.current}"
+    )
 
 # ========== ステップ4: 答えをチェック ==========
 # TODO: 回答ボタンと正解判定の処理を書く
+if st.button("回答する"):
+    selected_index = current_quiz['options'].index(answer)
+    
+    if selected_index == current_quiz['correct']:
+        st.success("🎉 正解！")
+        st.session_state.score += 1
+    else:
+        st.error("😢 不正解...")
+    
+    st.session_state.current += 1
+    st.rerun()
 
 
 # ========== ステップ5: 結果表示 ==========
 # TODO: 結果を表示する処理を書く
+else:
+    st.write("## 結果発表！")
+    st.write(f"### {st.session_state.score} / {len(quizzes)} 問正解")
+    
+    if st.button("もう一度"):
+        st.session_state.current = 0
+        st.session_state.score = 0
+        st.rerun()
