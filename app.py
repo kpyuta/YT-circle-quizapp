@@ -1,11 +1,12 @@
 import streamlit as st
 
 # ========== ステップ1: クイズのデータ ==========
+
 # TODO: ここにクイズデータを書く
 # 例：
 
  quizzes = [
-   {
+    {
          "question": "日本の首都はどこ？",
          "options": ["大阪", "東京", "京都"],
          "correct": 1
@@ -28,10 +29,12 @@ st.title("🎯 クイズアプリ")
 
 
 # ========== ステップ2: セッション状態の初期化 ==========
+  
 # TODO: セッション状態を初期化
-# if 'current' not in st.session_state:
-#     st.session_state.current = 0
-#     st.session_state.score = 0
+  
+if 'current' not in st.session_state:
+     st.session_state.current = 0  # 現在の問題番号
+     st.session_state.score = 0    # 得点
 
 
 # ========== ステップ3: クイズ表示 ==========
