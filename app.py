@@ -8,19 +8,19 @@ import streamlit as st
 #         "question": "日本の首都はどこ？",
 #         "options": ["大阪", "東京", "京都"],
 #         "correct": 1
-#     }
+#     },
 
 #    {
 #         "question":"1 + 1 = ?",
 #         "options": ["1", "2", "3"],
 #         "correct": 1
-# }
+#    },
 
-#     {
+#    {
 #         "question": "猫は英語で？",
 #         "options": ["Dog", "Cat", "Bird"],
 #         "correct": 1
-#     }
+#    }
 
 # ========== タイトル表示 ==========
 st.title("🎯 クイズアプリ")
