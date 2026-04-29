@@ -9,7 +9,11 @@ import streamlit as st
 #         "options": ["大阪", "東京", "京都"],
 #         "correct": 1
 #     }
-# ]
+
+#{"question":"1 + 1 = ?",
+#"options": ["1", "2", "3"],
+#         "correct": 1
+# }
 
 
 # ========== タイトル表示 ==========
