@@ -15,6 +15,11 @@ import streamlit as st
 #         "correct": 1
 # }
 
+#     {
+#         "question": "猫は英語で？",
+#         "options": ["Dog", "Cat", "Bird"],
+#         "correct": 1
+#     }
 
 # ========== タイトル表示 ==========
 st.title("🎯 クイズアプリ")
