@@ -1,23 +1,19 @@
 import streamlit as st
 
 # ========== ステップ1: クイズのデータ ==========
-
 # TODO: ここにクイズデータを書く
 # 例：
-
  quizzes = [
     {
          "question": "日本の首都はどこ？",
          "options": ["大阪", "東京", "京都"],
          "correct": 1
      },
-
     {
          "question":"1 + 1 = ?",
          "options": ["1", "2", "3"],
          "correct": 1
     },
-
     {
          "question": "猫は英語で？",
          "options": ["Dog", "Cat", "Bird"],
@@ -28,10 +24,8 @@ import streamlit as st
 st.title("🎯 クイズアプリ")
 
 
-# ========== ステップ2: セッション状態の初期化 ==========
-  
+# ========== ステップ2: セッション状態の初期化 ==========  
 # TODO: セッション状態を初期化
-  
 if 'current' not in st.session_state:
      st.session_state.current = 0  # 現在の問題番号
      st.session_state.score = 0    # 得点
