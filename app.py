@@ -10,8 +10,9 @@ import streamlit as st
 #         "correct": 1
 #     }
 
-#{"question":"1 + 1 = ?",
-#"options": ["1", "2", "3"],
+#    {
+#         "question":"1 + 1 = ?",
+#         "options": ["1", "2", "3"],
 #         "correct": 1
 # }
 
