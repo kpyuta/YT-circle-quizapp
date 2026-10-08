@@ -3,25 +3,61 @@ import streamlit as st
 # ========== ステップ1: クイズのデータ ==========
 # TODO: ここにクイズデータを書く
 # 例：
- quizzes = [
+quizzes = [
     {
-         "question": "日本の首都はどこ？",
-         "options": ["大阪", "東京", "京都"],
-         "correct": 1
-     },
+         "question": "泣いても涙がでないや",
+         "options": ["ちいかわ", "米津"],
+         "correct": 0
+    },
     {
-         "question":"1 + 1 = ?",
-         "options": ["1", "2", "3"],
+         "question":"お前になんかやるもんか",
+         "options": ["ちいかわ", "米津"],
          "correct": 1
     },
     {
-         "question": "猫は英語で？",
-         "options": ["Dog", "Cat", "Bird"],
+         "question": "守りたいんだ みんなが戻ってくるまで",
+         "options": ["ちいかわ", "米津"],
+         "correct": 0
+    },
+    {
+         "question": "この像に誓ったんだ 強くなると",
+         "options": ["ちいかわ", "米津"],
+         "correct": 0
+    },
+    {
+         "question":"お前になんかやるもんか",
+         "options": ["ちいかわ", "米津"],
+         "correct": 1
+    },
+    {
+         "question":"難解なパズルみたい",
+         "options": ["ちいかわ", "米津"],
+         "correct": 0
+    },
+    {
+         "question":"そこから見ていてね 大丈夫ありがとう",
+         "options": ["ちいかわ", "米津"],
+         "correct": 1
+    },
+    {
+         "question": "ヤンパパン ラララルルラ",
+         "options": ["ちいかわ", "米津"],
+         "correct": 0
+    },
+    {
+         "question":"ヒッピヒッピシェイク ダンディダンディドン",
+         "options": ["ちいかわ", "米津"],
+         "correct": 1
+    },
+    {
+         "question":"るるらったったったった",
+         "options": ["ちいかわ", "米津"],
          "correct": 1
     }
+ ]
 
 # ========== タイトル表示 ==========
-st.title("🎯 クイズアプリ")
+st.title("🎯ちいかわか米津玄師か当てるクイズ")
 
 
 # ========== ステップ2: セッション状態の初期化 ==========  
